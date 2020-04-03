@@ -15,7 +15,3 @@ Clone the repository:
 
 The application should run at ::
 [http://localhost:3000/#/](http://localhost:3000/#/)
-
-
-
-
