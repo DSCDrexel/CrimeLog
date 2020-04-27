@@ -1,0 +1,26 @@
+.box {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  background: orange;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+#crimeMarker {
+  color: "white";
+  background: "red";
+  padding: "12px 12px";
+  display: "inline-flex";
+  text-align: "center";
+  align-items: "center";
+  justify-content: "center";
+  border-radius: "100%";
+  transform: "translate(-50%, -50%)";
+  border: "1px solid yellow";
+}
+
+div:hover + .box {
+  display: block;
+}

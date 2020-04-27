@@ -1,0 +1,37 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.crimeMapContainer {
+  width: 100%;
+}
+
+.crimeDataContainer {
+  width: 0%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.HomePageTitle {
+  font-size: 36px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.spaceDivider {
+  height: 70%;
+  background-color: black;
+  width: 1px;
+  margin-left: 20px;
+}
+
+.policeReportContainer {
+  cursor: pointer;
+  margin-left: 30px;
+  font-size: 24px;
+}
