@@ -1,6 +1,20 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+li{
+    display: flex;
+    align-items: center;
+}
+
 .mainContainer {
   display: flex;
   flex-direction: row;
+  width: 66%;
+  height: 100%;
+  position: fixed;
 }
 
 .crimeMapContainer {
@@ -9,6 +23,13 @@
 
 .crimeDataContainer {
   width: 0%;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
 }
 
 .navbar {
@@ -34,4 +55,14 @@
   cursor: pointer;
   margin-left: 30px;
   font-size: 24px;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.policeReportContainer :hover {
+    height: 100%;
+    background-color: aliceblue;
+    align-items: center;
+  display: flex;
 }

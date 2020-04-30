@@ -1,5 +1,6 @@
 import React from "react";
 import CrimeMap from "./CrimeMap";
+import NewCrimeMap from "./NewCrimeMap";
 import { crimeDataAction } from "../actions/crimeDataAction";
 
 //Redux
@@ -17,26 +18,38 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="navbar">
-          <div className="HomePageTitle"> Drexel Crime Log</div>
-          <div className="spaceDivider"></div>
-          <div
-            onClick={() =>
-              (window.location.href =
-                "https://drexel.edu/publicsafety/forms/complaint/")
-            }
-            className="policeReportContainer"
-          >
-            File Police Report
+      <div className="container">
+        <ul className="nav nav-tabs">
+          <li>
+            <img
+              src="https://drexel.edu/~/media/Images/identity/athletics/athletics_D1.ashx?la=en"
+              width="50"
+              height="50"
+              alt="Drexel_Logo"
+            />
+            Crime Log
+          </li>
+          <li>
+            <a href="https://www.phillypolice.com/forms/official-complaint-form/">
+              Report a Crime
+            </a>
+          </li>
+          <li>
+            <a href="https://www.phillypolice.com/forms/submit-a-tip/">
+              Submit a Crime tip
+            </a>
+          </li>
+          <li>
+            <a href="tel:+12158952222">Call Public Safety</a>
+          </li>
+        </ul>
+        <br />
+          <div className="mainContainer">
+            <div className="crimeMapContainer">
+              <NewCrimeMap />
+            </div>
+            <div className="crimeDataContainer"></div>
           </div>
-        </div>
-        <div className="mainContainer">
-          <div className="crimeMapContainer">
-            <CrimeMap crimeData={this.props.crimeData} />
-          </div>
-          <div className="crimeDataContainer"></div>
-        </div>
       </div>
     );
   }

@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
+// import {InfoWindow,GoogleApiWrapper} from 'google-maps-react';
+import {Map, InfoWindow, GoogleApiWrapper} from 'google-maps-react';
+
 import "./crimeMap.css";
 
 // Crime data
@@ -10,7 +13,7 @@ import Geocode from "react-geocode";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
-Geocode.setApiKey("AIzaSyAu1YfYc6mPuMlmjgP17cxFh-Un4td5vgQ");
+// import StyledMarker from "./StyledMarker";
 
 // set response language. Defaults to english.
 Geocode.setLanguage("en");
@@ -20,7 +23,8 @@ const Marker = ({ text }) => (
     style={{
       color: "white",
       background: "red",
-      padding: "12px 12px",
+      padding: "4px",
+      font: "x-small",
       display: "inline-flex",
       textAlign: "center",
       alignItems: "center",
@@ -51,8 +55,11 @@ class CrimeMap extends Component {
       ],
       testStore: [],
       loading: true,
+  
     };
   }
+
+  
 
   displayMarkers = () => {
     // debugger
