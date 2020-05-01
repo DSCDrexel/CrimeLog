@@ -12,13 +12,13 @@ All universities are required to post crime logs online, which can be scraped to
 We are using React on frontend along with Redux.
 
 ## To Run:
-Clone the repository:
+### To view the deployed project
+  Visit https://dscdrexel.github.io/crimelog.
 
-`cd frontend`
-
-`npm install`
-
-`npm run start`
-
+### If running locally
+- Clone the repository
+- `cd frontend`
+- `npm install`
+- `npm run start`
 The application should run at ::
 [http://localhost:3000/#/](http://localhost:3000/#/)
